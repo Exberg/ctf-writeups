@@ -1,6 +1,9 @@
 # ctf-writeups
+
 im still a beginner for haccer...
 this is my first time doing ctf-writeups for pico-ctf, so the below is kinda funny.
+
+![gif](https://www.textures4photoshop.com/tex/thumbs/matrix-code-animation-gif-free-animated-background-716.gif)
 
 ---
 
