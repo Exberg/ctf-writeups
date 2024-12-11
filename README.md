@@ -2,10 +2,14 @@
 im still a beginner for haccer...
 this is my first time doing ctf-writeups for pico-ctf, so the below is kinda funny.
 
+---
+
 #### Scan Surprise
 ![easiest](https://github.com/Exberg/ctf-writeups/blob/main/images/image1.png)
----
+
 this was the easiest thing ive done, just unzip files, open image and scan qr code.
+
+---
 
 ### Verify
 Author: Jeffery John
@@ -20,6 +24,7 @@ first thing first, open linux and run the script.
 
 After ls the files, i figured i can just loop them instead of checking one by one since its so tedious to do so.
 
+---
 
 ### information
 ![cat](https://github.com/user-attachments/assets/70e6f365-eddd-4619-8da2-a2b0806d413c)
@@ -31,5 +36,17 @@ Spoilers Alert: "look at the file" NOT THE CAT!
 
 So, i used exiftool to extract some juicy infos. At the beginning, i was like where's the answer??? But when i take a deep look, and i paste everything into the cyberchef, i found this particular line (highlighted in green) delivered me straight to the answer :P
 
+---
 
-  
+### what's a net cat?
+`
+Using netcat (nc) is going to be pretty important. Can you connect to jupiter.challenges.picoctf.org at port 64287 to get the flag?
+`
+
+I find this interesting because of the title lol
+
+First, install netcat on terminal. Then, Connect to the Host and Port: nc jupiter.challenges.picoctf.org 64287
+
+<img width="347" alt="Screenshot 2024-12-12 at 2 36 52 AM" src="https://github.com/user-attachments/assets/67c31a19-66de-46fc-90c4-0e97a9393968" />
+
+**so ezzZ = =**
