@@ -23,7 +23,7 @@ People keep trying to trick my players with imitation flags. I want to make sure
 
 first thing first, open linux and run the script. 
 
-<img width="1059" alt="Screenshot 2024-12-12 at 2 06 28 AM" src="https://github.com/user-attachments/assets/37880966-5911-4c24-b023-e39b5a210fd8" />
+<img width="1059" alt="Screenshot 2024-12-12 at 2 06 28 AM" src="https://github.com/user-attachments/assets/22ef7d42-ba78-43f4-b9a2-487d2eaeb6ca" />
 
 After ls the files, i figured i can just loop them instead of checking one by one since its so tedious to do so.
 
