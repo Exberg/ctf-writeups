@@ -53,3 +53,10 @@ First, install netcat on terminal. Then, Connect to the Host and Port: nc jupite
 <img width="347" alt="Screenshot 2024-12-12 at 2 36 52 AM" src="https://github.com/user-attachments/assets/67c31a19-66de-46fc-90c4-0e97a9393968" />
 
 **so ezzZ = =**
+
+### Serpentine - Find the flag in the Python script!
+<img width="876" alt="Screenshot 2024-12-12 at 12 46 48 PM" src="https://github.com/user-attachments/assets/aa2f2c8a-fa56-489e-bfdb-8b60305ce4fc" />
+
+This one is pretty easy, just call this function 'print_flag()'
+
+
