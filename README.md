@@ -27,10 +27,11 @@ This can be used to see the last argument given to the previous command.
 
 I asked my friend on more tips to solve this, and my friend gimme this link: [Can Bash substring offset be omiited?](https://stackoverflow.com/questions/75370113/can-bash-substring-offset-be-omitted)
 
-Finally with the help of the letters `c, a, t` from on-calastran.txt
+Finally with the help of the letters `c, a, t` from on-calastran.txt, i can finally read the flag.txt file :D
 
 <img width="566" alt="Screenshot 2024-12-12 at 2 47 06 PM" src="https://github.com/user-attachments/assets/ff3f3812-3ca5-4f5a-b3aa-de881d27ecc2" />
 
+---
 
 #### Scan Surprise
 ![easiest](https://github.com/Exberg/ctf-writeups/blob/main/images/image1.png)
