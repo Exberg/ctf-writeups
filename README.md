@@ -8,7 +8,7 @@ this is my first time doing ctf-writeups for pico-ctf, so the below is kinda fun
 ---
 
 
-#### Description
+#### Serpentine
 
 This is the most challenging question Ive solved (took me 6hrs), the logic is to open flag.txt or even run bash command without even typing the **letters**!
 
