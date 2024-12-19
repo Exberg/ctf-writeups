@@ -40,10 +40,12 @@ The first column means:
 - `30`: structure type (the whole PEM)
 - `82`: next 2 bytes are the length
 - `0929`: length in hex value
+
 The second column means:
 - `02`: integer type
 - `01`: next 1 byte is the length
 - `00`: length 0
+
 Starting from the third column onwards,  **shows the N, e, d, p, q ,... and so on**  
 - `02`: integer type
 - `82`: next 2 bytes are the length
