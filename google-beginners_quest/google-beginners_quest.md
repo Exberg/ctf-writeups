@@ -113,6 +113,7 @@ This one is same as RSA 1 but the redaction covered up the middle and the bottom
 <img width="549" alt="Screenshot 2024-12-19 at 10 39 52 PM" src="https://github.com/user-attachments/assets/18cd7c2d-3e67-484e-b008-26bbbaee10c0" />
 
 Same strategy, read the Pem in Hex with cyberchef and extract the data:
+
 Here's some useful data extracted:
 ```
 n = {LARGE_NUMBER}
@@ -188,6 +189,7 @@ if result:
 ```
 
 After that, you'll get `p`, `q` and `d`.
+
 Then construct a private key PEM and voila! solved~
 
 ---
