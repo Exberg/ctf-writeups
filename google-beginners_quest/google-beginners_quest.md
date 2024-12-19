@@ -127,6 +127,8 @@ Welp, time to google! I found this [stackexchange forum](https://crypto.stackexc
 
 <img width="925" alt="Screenshot 2024-12-19 at 10 44 21 PM" src="https://github.com/user-attachments/assets/3fc6fe99-eaf6-4636-9e18-0a339ba28553" />
 
+---
+
 So, chatgpt it, and here's the code:
 
 ```python
