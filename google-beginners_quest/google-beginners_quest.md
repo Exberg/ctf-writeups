@@ -104,3 +104,88 @@ decrypted_message = number.long_to_bytes(decrypted_int).decode('latin-1')
 
 print("Decrypted Message:", decrypted_message)
 ```
+
+---
+
+# Crypto Redacted RSA 2
+This one is same as RSA 1 but the redaction covered up the middle and the bottom (only parts of it showed).
+
+<img width="549" alt="Screenshot 2024-12-19 at 10 39 52 PM" src="https://github.com/user-attachments/assets/18cd7c2d-3e67-484e-b008-26bbbaee10c0" />
+
+Same strategy, read the Pem in Hex with cyberchef and extract the data:
+Here's some useful data extracted:
+```
+n = {LARGE_NUMBER}
+e = {010001} #65537
+dp = d mod (q-1) = {LARGE_NUMBER}
+```
+So, for a valid PEM, I need to get `p` or `q` or `d`.
+
+## How can we find it without large computing power?
+
+Welp, time to google! I found this [stackexchange forum](https://crypto.stackexchange.com/questions/46486/rsa-given-n-e-dp-is-it-possible-to-find-d) particularly helpful for this.
+
+<img width="925" alt="Screenshot 2024-12-19 at 10 44 21 PM" src="https://github.com/user-attachments/assets/3fc6fe99-eaf6-4636-9e18-0a339ba28553" />
+
+So, chatgpt it, and here's the code:
+
+```python
+import random
+from math import gcd
+from sympy import mod_inverse  # To compute modular inverse
+
+def hex_to_int(hex_value):
+    """
+    Convert a hex string to an integer.
+    """
+    return int(hex_value, 16)
+
+def find_dp(n, e, dp):
+    """
+    Find the factorization of n and recover d using dp.
+    """
+    # Choose a random r
+    r = random.randint(2, n - 1)
+    
+    # Compute r^(e * dp) mod n
+    r_exp = pow(r, e * dp, n)
+    
+    # Compute gcd of n and (r_exp - r)
+    factor = gcd(n, r_exp - r)
+    
+    if factor == 1 or factor == n:
+        print("Failed to find a factor. Try again.")
+        return None
+    
+    # Factorization of n: p and q
+    p = factor
+    q = n // p
+    
+    # Recover private key components
+    phi = (p - 1) * (q - 1)
+    d = mod_inverse(e, phi)
+    
+    return d, p, q
+
+# Example inputs (hexadecimal values)
+n_hex = "8D23"  # Replace with your modulus in hex
+e_hex = "11"    # Replace with your public exponent in hex
+dp_hex = "0D"   # Replace with your dp (d mod (p-1)) in hex
+
+# Convert hex to integers
+n = hex_to_int(n_hex)
+e = hex_to_int(e_hex)
+dp = hex_to_int(dp_hex)
+
+# Find d and factors
+result = find_dp(n, e, dp)
+if result:
+    d, p, q = result
+    print(f"Recovered d: {hex(d)}")  # Convert to hex for readability
+    print(f"Factors p: {hex(p)}, q: {hex(q)}")  # Convert to hex for readability
+```
+
+After that, you'll get `p`, `q` and `d`.
+Then construct a private key PEM and voila! solved~
+
+---
