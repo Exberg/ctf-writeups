@@ -11,7 +11,7 @@ Basically, only the bottom part of it was redacted.
 So we only need to understand the whole structure:
 
 Structure of PEM in DER
-![](https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img4.png)
+<img width="500" alt="img4" src="https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img4.png">
 
 ---
 #### ASN.1 Cheatsheets
