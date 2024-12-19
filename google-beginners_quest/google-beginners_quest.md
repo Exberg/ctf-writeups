@@ -18,8 +18,8 @@ Structure of PEM in DER
 <img width="500" alt="img4" src="https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img4.png">
 
 ---
-#### ASN.1 Cheatsheets
-Format: (type) (byte size @ length in bytes)
+### ASN.1 Cheatsheets
+#### Format: (type) (byte size @ length in bytes)
 
 > [!NOTE]
 > 1 byte = 2 Hex
