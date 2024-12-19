@@ -7,4 +7,5 @@ this is my first time doing ctf-writeups, so don't laugh :P
 
 CTFs_Archive
 
-[google-beginners_quest](/google-beginners_quest/google-beginners_quest.md)
+## [google-beginners_quest](/google-beginners_quest/google-beginners_quest.md)
+
