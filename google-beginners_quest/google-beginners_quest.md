@@ -1,6 +1,7 @@
 
 # Crypto Redacted RSA 1
 ![](https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img1.png)
+
 I have a RSA private key, but it is **partially redacted**. Can you recover that? Run `openssl pkeyutl -decrypt -inkey key-recovered.pem -in encrypted.txt -out plaintext.txt` after you have recovered the key.
 
 First, you turn the Pem to Hex using cyberchef.
