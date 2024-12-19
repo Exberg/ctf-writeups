@@ -22,7 +22,7 @@ Structure of PEM in DER
 Format: (type) (byte size @ length in bytes)
 
 > [!NOTE]
-> *1 byte = 2 Hex
+> 1 byte = 2 Hex
 
 **Type:**
 - `02`: INTEGER
