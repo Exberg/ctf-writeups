@@ -5,12 +5,14 @@
 I have a RSA private key, but it is **partially redacted**. Can you recover that? Run `openssl pkeyutl -decrypt -inkey key-recovered.pem -in encrypted.txt -out plaintext.txt` after you have recovered the key.
 
 First, you turn the Pem to Hex using cyberchef.
+
 ![](https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img5.png)
 
 Basically, only the bottom part of it was redacted. 
 So we only need to understand the whole structure:
 
 Structure of PEM in DER
+
 <img width="500" alt="img4" src="https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img4.png">
 
 ---
@@ -31,6 +33,7 @@ Format: (type) (byte size @ length in bytes)
 - `01`: 1 byte
 
 ---
+
 ![](https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img3.png)
 
 The first column means:
