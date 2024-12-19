@@ -20,7 +20,9 @@ Structure of PEM in DER
 ---
 #### ASN.1 Cheatsheets
 Format: (type) (byte size @ length in bytes)
-*1 byte = 2 Hex
+
+> [!NOTE]
+> *1 byte = 2 Hex
 
 **Type:**
 - `02`: INTEGER
