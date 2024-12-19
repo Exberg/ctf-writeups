@@ -10,7 +10,7 @@ Basically, only the bottom part of it was redacted.
 So we only need to understand the whole structure:
 
 Structure of PEM in DER
-![[img4.png|| 500]]
+![](https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img4.png)
 
 ---
 #### ASN.1 Cheatsheets
@@ -30,7 +30,7 @@ Format: (type) (byte size @ length in bytes)
 - `01`: 1 byte
 
 ---
-![[img3.png]]
+![](https://github.com/Exberg/ctf-writeups/blob/main/google-beginners_quest/img-gbq/img3.png)
 
 The first column means:
 - `30`: structure type (the whole PEM)
