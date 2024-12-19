@@ -27,7 +27,7 @@ Format: (type) (byte size @ length in bytes)
 - `05`: NULL (no value)
 - `30`: SEQUENCE (a collection of items)
 
-**Byte Size @ length:
+**Byte Size @ length:**
 - `82`: the **next 2** bytes are the **length**
 - `03`: 3 bytes
 - `01`: 1 byte
