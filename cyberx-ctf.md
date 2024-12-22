@@ -2,9 +2,55 @@
 
 My writeups for the cryptography CTFs.
 
+## Math?
+
+We are given
+```python
+n = {LARGE_VALUE}
+e1 = {LARGE_VALUE}
+e2 = {LARGE_VALUE}
+c1 = {LARGE_VALUE}
+c2 = {LARGE_VALUE}
+```
+and equations in `png`:
+
+![chal(1)](https://github.com/user-attachments/assets/39ea306a-7e27-4155-9baf-bbd352e8f99b)
+
+This can actually be solved in 3 lines lol (or even less XD)
+
+```python
+q = math.gcd(n, pow(c1, e2, n) * pow(5, e1 * e2, n) - pow(c2, e1, n) )
+q // 16
+p = n // q
+```
+
+Remember to check the values:
+
+```python
+if p * q == n:
+    print("yes")
+else:
+    print("no")
+```
+
+Here's the full code: [math.py](https://github.com/Exberg/ctf-writeups/blob/main/math.py)
+
+For those who are actually curious on how I solved it?
+
+- I think we need to change the math equation into **simpler** and more **efficient**.
+- So, I just follow the reference I found online, and try to modify the equations into more efficient ones.
+
+References: 
+1. https://ctftime.org/writeup/15438
+2. https://crypto.stackexchange.com/questions/106396/solve-congruent-equation-likes-n-pq-c1-2p-3qe1-mod-n-c2-5p-7
+
+---
+
 ## XOR II
 
-Here's how XOR worked:
+I found an article of XOR Crypto: [link](https://golamrabbany.medium.com/crypto-ctf-you-either-know-xor-you-dont-69ac9b8f4812)
+
+Here's how XOR worked: 
 
 When you construct a XOR cipher, you need to enter 2 values: the `key` and the `flag`
 
@@ -140,10 +186,6 @@ Finally, run the Code and Voila!
 <img width="214" alt="Screenshot 2024-12-22 at 12 11 37 PM" src="https://github.com/user-attachments/assets/cd453074-5627-4683-8971-0bd7623351dc" /> 
 
 ---
-
-## Math?
-
-Coming soon
 
 
 
