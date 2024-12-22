@@ -24,6 +24,8 @@ q // 16
 p = n // q
 ```
 
+---
+
 Remember to check the values:
 
 ```python
@@ -33,7 +35,11 @@ else:
     print("no")
 ```
 
+---
+
 Here's the full code: [math.py](https://github.com/Exberg/ctf-writeups/blob/main/math.py)
+
+---
 
 For those who are actually curious on how I solved it?
 
