@@ -2,7 +2,7 @@
 
 This challenge is actually very easy but just annoying.
 
-<img width="200" alt= "APTAPT" srs= "https://github.com/Exberg/ctf-writeups/blob/main/CyberX_CTF/APTAPTAPT.png" />
+<img width="200" alt= "APTAPT" src= "https://github.com/Exberg/ctf-writeups/blob/main/CyberX_CTF/APTAPTAPT.png" />
 
 First, it looks like a cipher. So, I just went to decode.fr to search for music related cipher:
 
