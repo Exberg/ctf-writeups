@@ -41,7 +41,7 @@ Here's the full code: [math.py](https://github.com/Exberg/ctf-writeups/blob/main
 
 ---
 
-For those who are actually curious on how I solved it?
+For those who are actually curious on `how I solved it?`
 
 - I think we need to change the math equation into **simpler** and more **efficient**.
 - So, I just follow the reference I found online, and try to modify the equations into more efficient ones.
