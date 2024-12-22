@@ -1,5 +1,6 @@
 # CyberX CTF
 
+Can't believe we won Champion for our first CTF tournament!
 My writeups for the cryptography CTFs.
 
 ## Math?
