@@ -48,6 +48,10 @@ For those who are actually curious on `how I solved it?`
 - I think we need to change the math equation into **simpler** and more **efficient**.
 - So, I just follow the reference I found online, and try to modify the equations into more efficient ones.
 
+<img width="1224" alt="Screenshot 2024-12-21 at 1 40 54 AM" src="https://github.com/user-attachments/assets/a16573c7-1c92-4a51-9cfa-873a737a6124" />
+
+---
+
 References: 
 1. https://ctftime.org/writeup/15438
 2. https://crypto.stackexchange.com/questions/106396/solve-congruent-equation-likes-n-pq-c1-2p-3qe1-mod-n-c2-5p-7
