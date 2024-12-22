@@ -1,6 +1,6 @@
 # ctf-writeups
 
-im still a beginnesr haccer...
+im still a beginner haccer...
 this is my first time doing ctf-writeups, so don't laugh :P
 
 ### CTFs_Archive
